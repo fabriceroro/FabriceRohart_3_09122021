@@ -1,0 +1,69 @@
+header {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 180px;
+}
+.logo img i {
+  padding-right: 10px;
+}
+
+.research {
+  width: 100%;
+  background-color: #e9e6e6;
+  padding: 5px 10px 5px 40px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.research .section-research {
+  display: flex;
+  align-items: center;
+}
+.research .input-research {
+  height: 40px;
+  border: none;
+  background-color: #e9e6e6;
+  font-weight: bold;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.reservation {
+  background-color: #f8f5f5;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.reservation h2 {
+  margin: auto;
+}
+
+.input-explore {
+  padding: 15px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356dc);
+  color: white;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: yellow;
+}
+.input-explore button {
+  cursor: pointer;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

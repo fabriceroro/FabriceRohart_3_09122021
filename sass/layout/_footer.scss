@@ -1,0 +1,44 @@
+
+.end{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    max-width: 1440px;
+    position: absolute;
+    bottom: 5px;
+
+   
+      h2{
+        padding: 0 25px;
+        font-family: 'Shrikhand', cursive;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-bottom: 0;
+      }
+          
+          
+    
+}
+
+.liste-footer{
+    display: flex;
+    ul{
+        padding: 0px 25px;
+        li{
+            list-style: none;
+            padding-bottom: 10px;
+            font-weight: bold;
+             a{
+                 text-decoration: none;
+                 color: white;
+             }
+            .fas{
+                padding: 0 15px 0 0;
+                width: 15px;
+            
+
+            }
+        }
+    }
+}
