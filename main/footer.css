@@ -1,0 +1,251 @@
+header {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.logo img i {
+  padding-right: 10px;
+}
+
+.research {
+  width: 100%;
+  background-color: #e9e6e6;
+  padding: 5px 10px 5px 40px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0 3px 3px #c0bfbf;
+          box-shadow: inset 0 3px 3px #c0bfbf;
+}
+
+.research .section-research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.research .input-research {
+  height: 40px;
+  border: none;
+  background-color: #e9e6e6;
+  font-weight: bold;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.reservation {
+  background-color: #f8f5f5;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.reservation h1 {
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.reservation p {
+  font-size: 18px;
+  color: grey;
+}
+
+.input-explore {
+  padding: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356dc));
+  background: linear-gradient(#FF79DA, #9356dc);
+  color: white;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-shadow: grey 0 5px 10px;
+          box-shadow: grey 0 5px 10px;
+  margin: 15px 0 30px 0;
+}
+
+.input-explore:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-box-shadow: #424242 0 7px 12px;
+          box-shadow: #424242 0 7px 12px;
+}
+
+.fonction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.fonction ul {
+  list-style-type: none;
+  padding: 15px 5px;
+  width: 320px;
+}
+
+.fonction ul li {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 10px 0;
+  margin-top: 0;
+  margin-bottom: 25px;
+  -webkit-box-shadow: #a5a5a5 0 5px 10px;
+          box-shadow: #a5a5a5 0 5px 10px;
+}
+
+.fonction ul li:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #e1cbfd;
+}
+
+.fonction ul li a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.fonction ul li a span {
+  padding: 5px 10PX;
+  border-radius: 100%;
+  font-size: 14px;
+  background-color: #9356DC;
+  color: white;
+  margin-left: -15px;
+}
+
+.fas {
+  color: #9356DC;
+  padding: 0 20px;
+}
+
+.selection {
+  background-color: #f2f2f2;
+}
+
+.selection h2 {
+  padding: 15px 25px;
+}
+
+.container1 {
+  width: 330px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  background-color: white;
+  border-radius: 25px;
+  -webkit-box-shadow: #dfdddd 0 5px 5px;
+          box-shadow: #dfdddd 0 5px 5px;
+}
+
+.container1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.container1 a h3 {
+  margin: 0px;
+}
+
+.container1 img {
+  border-radius: 25px 25px 0 0;
+  width: 330px;
+  height: 180px;
+}
+
+.news {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #99E2D0;
+  padding: 10px 15px;
+  color: #239679;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.data-container1 {
+  padding: 10px;
+}
+
+.data-container1 p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.far {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  font-size: 24px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Rotobo", sans-serif;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: yellow;
+}
+
+.footer .logo {
+  background-color: yellowgreen;
+}
+/*# sourceMappingURL=footer.css.map */
