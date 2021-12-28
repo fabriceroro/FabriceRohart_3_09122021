@@ -78,12 +78,14 @@ body
         
         
     }  
-    .prix{
-        position: absolute;
-        bottom: 0px;
-        right: 20px;
+    .heart{
+        &:hover{
+            .fa-heart{
+                @include heart;
+            }
+        }
        
-    }
+   }
     p{
         margin: 5px 0px 15px 0;
         padding: 5px 0;

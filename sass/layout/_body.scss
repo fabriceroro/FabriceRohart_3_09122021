@@ -5,6 +5,8 @@ body{
     max-width: 1440px;
     margin: auto;
     display: flex;
+    
+
  
     
    
@@ -18,3 +20,10 @@ section{
     justify-content: space-between;
 }
     
+h4{
+   
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

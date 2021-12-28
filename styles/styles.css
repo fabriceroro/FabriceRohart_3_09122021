@@ -122,6 +122,9 @@ header {
   font-size: 16px;
   font-weight: bold;
 }
+.fonction ul li a p {
+  margin-bottom: 5px;
+}
 .fonction ul li a span {
   padding: 5px 10PX;
   border-radius: 100%;
@@ -136,14 +139,17 @@ header {
 }
 
 .selection {
+  width: 100%;
   background-color: #f2f2f2;
   padding-bottom: 50px;
 }
+.selection h2 {
+  padding-left: 20px;
+}
 
 .container1 {
-  width: 330px;
+  width: 90%;
   position: relative;
-  display: flex;
   margin: 20px 20px 0px 20px;
   background-color: white;
   border-radius: 25px;
@@ -152,6 +158,7 @@ header {
 .container1 a {
   text-decoration: none;
   color: black;
+  width: 100%;
 }
 .container1 a h3 {
   margin: 0px;
@@ -159,7 +166,7 @@ header {
 .container1 img {
   object-fit: cover;
   border-radius: 25px 25px 0 0;
-  width: 330px;
+  width: 100%;
   height: 180px;
 }
 
@@ -204,6 +211,13 @@ section {
 .fa-heart {
   font-size: 24px;
   justify-content: space-between;
+}
+
+h4 {
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .end {
@@ -309,10 +323,16 @@ body {
   margin: 15px 0px 0px 0px;
 }
 
-.prix {
-  position: absolute;
-  bottom: 0px;
-  right: 20px;
+.heart:hover .fa-heart {
+  font-size: 24px;
+  color: black;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  transition: color 5s ease-in-out;
+  cursor: pointer;
 }
 
 p {
@@ -355,50 +375,219 @@ p {
   font-family: "Shrikhand", cursive;
   font-weight: 10;
 }
-.title-menu .far {
-  position: absolute;
-  top: 45px;
-  right: 40px;
-  font-size: 20px;
+.title-menu .heart:hover .fa-heart {
+  font-size: 24px;
+  color: black;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  transition: color 5s ease-in-out;
+  cursor: pointer;
+}
+.title-menu .title-card {
+  padding: 0px 25px;
+  width: 100px;
 }
 
-.title-card {
-  padding: 0px 25px;
+h3 {
+  position: relative;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 400;
 }
-.title-card h2 {
-  margin-top: 0;
+h3::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #99e2d0;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
 }
 
 .container {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 15px;
   background-color: white;
   border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container:hover .check {
+  margin-right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.container:hover .check i {
+  animation: rotatecircle 0.5s ease-in-out;
+}
+@keyframes rotatecircle {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 .container .data-container {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   padding-left: 15px;
-}
-.container .data-container h3 {
-  margin: 15px 0px 0px 0px;
 }
 
 .prix {
-  position: absolute;
-  bottom: 0px;
-  right: 20px;
+  display: flex;
+  border-radius: 0 25px 25px 0;
+  align-items: flex-end;
+  margin-left: auto;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+
+.check {
+  bottom: 35px;
+  padding: 0px;
+  background-color: #99e2d0;
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-right: -65px;
+  color: white;
 }
 
 p {
-  margin: 5px 0px 15px 0;
-  padding: 5px 0;
+  margin: 5px 0px 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .input-command {
   display: flex;
   justify-content: center;
+}
+
+.body-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FF79DA, #9356dc);
+  opacity: 1;
+  animation: fond 0.1s ease-out;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.loader-spiner {
+  border: 4px solid transparent;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-radius: 50px;
+  animation: spiner 1s linear infinite;
+  opacity: 0.6;
+}
+
+.loader-spiner::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 5px;
+  right: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  border: 4px solid transparent;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-radius: 50px;
+  animation: spinererverse 2s linear infinite;
+}
+
+@keyframes spiner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinererverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes fond {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@media (min-width: 992px) {
+  .fonction {
+    display: flex;
+  }
+  .fonction ul {
+    display: flex;
+    width: 100%;
+    margin-right: 10px;
+    justify-content: space-between;
+  }
+  .fonction ul li {
+    width: 30%;
+  }
+  .fonction ul li a {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .selection h2 {
+    width: 100%;
+  }
+  .selection .container1 {
+    width: 40%;
+  }
+  .selection .container1 a {
+    width: 100%;
+  }
+  .selection .container1 a img {
+    width: 100%;
+  }
+
+  .menu .all-card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu .all-card .card {
+    width: 600px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

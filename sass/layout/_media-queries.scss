@@ -1,0 +1,70 @@
+@media(min-width:992px){
+    .fonction{
+        display: flex;
+        
+        
+        ul{ 
+            display: flex;
+            width: 100%;
+            margin-right: 10px;
+            justify-content: space-between;
+            
+            
+            
+            
+            li{
+                width: 30%;
+                
+                a{
+                    width: 100%;
+                    
+                    
+                    
+                }
+            }
+        }
+        
+    }
+    
+    
+    
+    
+    
+}
+@media(min-width:768px){
+    .selection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        h2{
+            width: 100%;
+        }
+        .container1{
+            width: 40%;
+            a{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .menu{
+        .all-card{
+            display: flex;
+            justify-content: space-between;
+            .card{
+                width:600px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                .data-container{
+                }
+            }
+    
+        }
+    }
+    
+    
+}
+ 
