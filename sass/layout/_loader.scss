@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#FF79DA,#9356dc);
+    background: $linear;
     opacity: 1;
     animation: fond 0.1s ease-out;
     animation-delay: 3s;
@@ -50,28 +50,7 @@
     border-bottom-color: white;
     border-radius: 50px;
     animation: spinererverse 2s linear infinite;
-    
+   
 }
 
-@keyframes spiner {
-    0%{
-     transform: rotate(0deg);
-    }
-    100%{
-    transform: rotate(360deg);
-    }
-}
-@keyframes spinererverse{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(-360deg);
-    }
-}
-@keyframes fond {
-   100%{
-       opacity: 0;
-       z-index: -1;
-   }
-}
+

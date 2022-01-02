@@ -26,11 +26,12 @@
         
     }
     
-    
+
     
     
     
 }
+
 @media(min-width:768px){
     .selection{
         display: flex;
@@ -53,14 +54,12 @@
         .all-card{
             display: flex;
             justify-content: space-between;
-            .card{
-                width:600px;
-                text-overflow: ellipsis;
-                overflow: hidden;
+             .card{
+                width : 500px;
+                text-overflow : ellipsis;
+                overflow : hidden;
                 white-space: nowrap;
-                .data-container{
-                }
-            }
+             }
     
         }
     }

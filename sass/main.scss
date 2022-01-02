@@ -1,10 +1,11 @@
-@import"page/header";
-@import"layout/research";
-@import"layout/body";
-@import"layout/footer";
-@import"page/acceuil";
-@import"page/menu";
-@import"layout/loader";
-@import"layout/media-queries";
-
-
+@import "utils/keyframes";
+@import "utils/variable";
+@import "utils/mixins";
+@import "page/header";
+@import "layout/research";
+@import "layout/body";
+@import "layout/footer";
+@import "page/acceuil";
+@import "page/menu";
+@import "layout/loader";
+@import "Utils/media-queries";

@@ -1,0 +1,10 @@
+// color
+$linear:linear-gradient(#ff79da, #9356dc);
+$shadow:#a5a5a5 0 5px 10px;
+$background:rgb(248, 245, 245);
+$primary:#9356dc;
+$tertiary:#99e2d0;
+// variable animation
+$num-bars: 4 ;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / $num-bars ;
