@@ -21,13 +21,14 @@
   }
 }
 @keyframes animation-card {
-  0% {
+  from {
     transform: translateY(1000px);
     opacity: 0;
   }
-  100% {
+  to {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
   }
 }
 header {
@@ -440,6 +441,7 @@ p {
 }
 
 .container {
+  visibility: hidden;
   margin: 15px;
   background-color: white;
   border-radius: 15px;
@@ -447,9 +449,9 @@ p {
   display: flex;
   flex-wrap: nowrap;
   box-shadow: #b9b9b9 0 2px 6px;
+  animation: animation-card 1000ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  animation: animation-card 1000ms;
 }
 .container--1 {
   animation-delay: 250ms;
